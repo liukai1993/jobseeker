@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import FormSignup from './FormSignup'
 import FormSuccess from './FormSuccess'
 import './Form.css'
+import logo from "./img-5.png"
 
 const Form = () => {
     const [isSubmitted, setIsSubmitted] = useState(false)
@@ -12,7 +13,7 @@ const Form = () => {
     return (
         <div className='form-container'>
             <div className='form-content-left'>
-                <img src='img/img-5.png' className='form-img'/>
+                <img src={logo} className='form-img'/>
             </div>
 
             {!isSubmitted ? <FormSignup submitForm=
